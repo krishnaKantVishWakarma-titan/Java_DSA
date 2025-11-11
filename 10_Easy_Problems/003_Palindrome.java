@@ -28,7 +28,7 @@ public class Main
 	}
 
 	// 2nd Approache
-	//
+	// Using two pointer's
 	// Time: O(n/2) -> O(n)
 	// Space: O(1)
 	public static boolean is_palind2(String val) {
