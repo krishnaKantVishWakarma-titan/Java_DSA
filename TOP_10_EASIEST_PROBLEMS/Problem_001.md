@@ -17,11 +17,6 @@
 - **Time Complexity:**  
 - **Space Complexity:**  
 
-## Solution (Code)
-```python
-# Paste your code here with comments if helpful
-```
-
 ## Test Cases
 | Input | Output | Remarks |
 |-------|--------|--------|
