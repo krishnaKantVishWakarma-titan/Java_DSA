@@ -70,5 +70,62 @@
 **Problem:** Remove duplicates while keeping order.
 **Key Concepts:** HashSet + Array or ArrayList.
 
+---
 
-Reply with **A or B** 🙂
+### ✅ **11. Find Second Largest Element in Array**
+
+**Key Concepts:** Traversal / Comparisons.
+
+---
+
+### ✅ **12. Check if Number is Prime**
+
+**Key Concepts:** Loop / Math.
+
+---
+
+### ✅ **13. Count Vowels and Consonants in String**
+
+**Key Concepts:** String Processing
+
+---
+
+### ✅ **14. Find GCD (HCF) of Two Numbers**
+
+**Key Concepts:** Euclid Algorithm 
+
+---
+
+### ✅ **15. Find LCM of Two Numbers**
+
+**Key Concepts:** Math (LCM = a*b / GCD)
+
+---
+
+### ✅ **16. Move All Zeroes to End of Array**
+
+**Key Concepts:** Two Pointer / In-place update
+
+---
+
+### ✅ **17. Check if Array is Sorted**
+
+**Key Concepts:** Simple Traversal
+
+---
+
+### ✅ **18. Count Even and Odd Numbers in Array**
+
+**Key Concepts:** Conditional check.
+
+---
+
+### ✅ **19. Print Table of a Number**
+
+**Key Concepts:** Loops
+
+---
+
+### ✅ **20. Merge Two Sorted Arrays (Without Sorting Again)**
+
+**Key Concepts:** Two Pointer technique
