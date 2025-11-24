@@ -1,4 +1,4 @@
-**20 easy DSA coding problems**, perfect for beginners:
+**20 easy DSA coding problems**, perfect for beginners: 
 
 ---
 
