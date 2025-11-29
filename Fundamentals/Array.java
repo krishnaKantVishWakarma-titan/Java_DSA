@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Main {
     public static void main(String[] args) {
         // Array
@@ -44,6 +46,56 @@ public class Main {
 
         // Dynamic 2D array
         int[][] arr4 = new int[3][2];
+
+        // Useful methods from Array class
+        int[] arr = {1, 5, 3, 5, 2, 8, 4, 6};
+
+        for (int ele: arr) {
+            System.out.print(ele + " ");
+        }
+
+        // Sort the entire array
+        Arrays.sort(arr);
+        System.out.println("\n After sorting: ");
+        for (int ele: arr) {
+            System.out.print(ele + " ");
+        }
+
+        int[] arr2 = {1, 5, 3, 5, 2, 8, 4, 6};
+
+        // Sort the given range of the array
+        Arrays.sort(arr2, 2, 4);
+        System.out.println("\n After range sorting: ");
+        for (int ele: arr2) {
+            System.out.print(ele + " ");
+        }
+
+        // Binary search implementation
+        System.out.println("\n" + Arrays.binarySearch(arr, 10));
+        // If found then return index else negative value or less than zero value
+
+        Arrays.fill(arr, 5);  // fills entire array with 5
+        Arrays.fill(arr, 1, 3, 10);  // fills a range
+
+        // Convert Array to String
+        System.out.println(Arrays.toString(arr2));
+
+        // Compare two arrays
+        System.out.println(Arrays.equals(arr, arr2));
+
+        // Arrays.deepEquals(arr1, arr2); For multi-dimensional array
+
+        // Convert array to list
+        List<Integer> list = Arrays.asList(1, 2, 3);
+        System.out.println(list);
+
+        // Set all the elements
+        Arrays.setAll(arr, i -> i * 2);
+
+        // Sum all the elements using streams api
+        int sum = Arrays.stream(arr).sum();
+        System.out.println(sum);
+        
 
         // Two pointer technique
         // 2-types:
