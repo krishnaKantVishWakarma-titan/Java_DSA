@@ -159,6 +159,89 @@ public class Main {
             }
         }
 
+        // Sliding window
+        // It is a technique used to process a range (window) of elements in an array or string.
+
+        // You move the window left → right without starting over each time.
+        // Type of Slidng window
+
+        // 1. Fixed-size window
+        // Window size is given (e.g., window of size 3).
+
+        // left = 0
+        // for right in 0..n:
+        //     add arr[right] to window
+        //
+        //     if window size > k:
+        //        remove arr[left]
+        //        left++
+        //
+        //    process the window
+
+        // Example 01: Find max sum of any subarray of size 3.
+        int[] arr = {2, 3, 5, 1, 6};
+        int k = 3;
+
+        // [2, 3, 5] → sum = 10
+        // [3, 5, 1] → sum = 9
+        // [5, 1, 6] → sum = 12
+
+        int windowSum = 0;
+        int maxSum = 0;
+
+        int left = 0;
+
+        for(int right=0; right < arr.length; right++) {
+            windowSum += arr[right];
+
+            if (right - left + 1 == k) {
+                maxSum = Math.max(windowSum, maxSum);
+
+                windowSum -= arr[left]; // remove left element
+                left++;                 // Slide the window
+            }
+        }
+
+        System.out.println("Max sum is "+maxSum);
+
+        // 2. Variable-size window
+        // Window grows or shrinks based on conditions.
+
+        // left = 0
+        // for right in 0..n:
+        //    add arr[right]
+        //
+        //    while condition is violated:
+        //        remove arr[left]
+        //        left++
+        //
+        //    update answer
+
+        // Example 02: Longest substring without repeating characters
+
+        String s = "abcabcbb";
+        left = 0;
+        int maxLen = 0;
+
+        Set<Character> set = new HashSet<>();
+
+        for (int right = 0; right < s.length(); right++) {
+
+            char ch = s.charAt(right);
+
+            // If duplicate, shrink window
+            while (set.contains(ch)) {
+                set.remove(s.charAt(left));
+                left++;
+            }
+
+            set.add(ch);
+
+            maxLen = Math.max(maxLen, right - left + 1);
+        }
+
+        System.out.println("Max length = " + maxLen);
+
         
 
     }
